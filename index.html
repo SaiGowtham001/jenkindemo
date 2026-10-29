@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Build Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0002;
+        }
+
+        h1 {
+            color: #d33833;
+        }
+
+        .status {
+            color: #16803c;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button {
+            background: #d33833;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jenkins Build Demo</h1>
+
+        <p>Welcome to my first DevOps project!</p>
+
+        <p class="status">Build Status: SUCCESS</p>
+
+        <p>Server: AWS EC2</p>
+        <p>Tool: Jenkins CI/CD</p>
+
+        <button onclick="showMessage()">
+            Test Application
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Hello! Your demo application is working.";
+        }
+    </script>
+</body>
+</html>
